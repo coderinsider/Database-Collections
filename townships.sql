@@ -1,13 +1,14 @@
 -- phpMyAdmin SQL Dump
--- version 5.0.2
+-- version 4.9.5
 -- https://www.phpmyadmin.net/
 --
--- Host: 127.0.0.1
--- Generation Time: Dec 18, 2020 at 08:25 AM
--- Server version: 10.4.14-MariaDB
--- PHP Version: 7.4.10
+-- Host: localhost:3306
+-- Generation Time: Dec 21, 2020 at 09:06 AM
+-- Server version: 5.7.32
+-- PHP Version: 7.3.6
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET AUTOCOMMIT = 0;
 START TRANSACTION;
 SET time_zone = "+00:00";
 
@@ -18,7 +19,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `minnthucom`
+-- Database: `wwwminnt_host`
 --
 
 -- --------------------------------------------------------
@@ -374,7 +375,9 @@ INSERT INTO `townships` (`id`, `city_id`, `township_cate`, `township`, `seach_ts
 (360, '18', 'ရွှေညောင်', 'Shwenaung', 'shwenaung', '2019-09-03 03:47:00', '2019-10-03 03:23:31'),
 (361, '18', 'တောင်ကြီး', 'Taunggyi', 'taunggyi', '2019-09-03 03:47:27', '2019-10-02 16:17:50'),
 (362, '18', 'ရွာငံ', 'Ywangan', 'ywangan', '2019-09-03 03:47:57', '2019-10-02 16:17:55'),
-(363, '18', 'နားဖန်း', 'Nafan', 'nafan', '2019-09-03 03:48:24', '2019-10-02 16:18:00');
+(363, '18', 'နားဖန်း', 'Nafan', 'nafan', '2019-09-03 03:48:24', '2019-10-02 16:18:00'),
+(364, '2', 'ပြည်ကြီးတံခွန်', 'Pyi Gyi Tagon', 'pyi-gyi-tagon', '2020-07-23 05:00:32', NULL),
+(365, '2', '', '', NULL, NULL, NULL);
 
 --
 -- Indexes for dumped tables
@@ -394,7 +397,7 @@ ALTER TABLE `townships`
 -- AUTO_INCREMENT for table `townships`
 --
 ALTER TABLE `townships`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=364;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=366;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
